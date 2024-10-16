@@ -1,0 +1,98 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+// Define colors
+$ochre: #e64626;        // primary
+$cupink: #DB5F8E;
+$charcoal: #424242;     // secondary
+$sandstone: #fcede2;    // secondary
+$jacaranda: #8f9ec9;    // tertiary
+$jaca-lite: #dde2ef;    // tertiary
+$heri-rose: #daa8a2;    // tertiary
+$eucalypt: #71a499;     // tertiary
+
+
+// Body and links
+$body-color: #000; // body text
+$text-muted: lighten($body-color, 50%);
+$link-color: $cupink;
+$link-color-hover: lighten($link-color, 10%);
+$presentation-line-height: 1.34;
+
+// Fonts
+$font-family-monospace: "Roboto Mono", monospace;
+$font-family-sans-serif: "Noto Sans Thai", sans-serif;
+$presentation-font-size-root: 35px;
+$presentation-font-smaller: 0.7rem;
+$code-block-bg: $jaca-lite;
+$code-bg: $jaca-lite;
+$code-block-border-color: $charcoal;
+$code-block-font-size: 0.7em;
+
+//
+
+$heading1Size: 2.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+/*-- scss:rules --*/
+
+
+// Align title and subtitle to left
+#title-slide {
+  text-align: left;
+
+  .quarto-title-authors {
+    justify-content: left!important;
+
+    .quarto-title-author {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+// Edit title attributes
+#title-slide .title {
+  font-size: 2.2em!important;
+  color: $cupink;
+}
+
+// Edit subtitle attributes
+#title-slide .subtitle {
+  font-size: 1.4em!important;
+  color: $charcoal;
+  width: 80%;
+}
+// Remove slide numbers from title slide
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
+
+// Make callout font size standard
+.reveal .slides section .callout {
+  font-size: 0.9em!important;
+}
+
+// adjust headings
+.reveal .slide h3,
+.reveal .slide h4,
+.reveal .slide h5,
+.reveal .slide h6 {
+  margin-top: 1.5em;
+  color: $eucalypt;
+}
+
+
+// code output
+.reveal pre code {
+  // background-color: #DAA8A2;
+  color:#e64626;
+  padding: 32px;
+}
