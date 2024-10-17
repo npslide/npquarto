@@ -11,3 +11,4 @@ contributes:
         data-background-image: "assets/title-bg.png"
         data-background-size: contain
       html-math-method: katex
+      logo: "assets/logo.png"

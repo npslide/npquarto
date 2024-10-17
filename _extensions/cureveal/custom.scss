@@ -75,6 +75,11 @@ $blockMargin: 20px;
   display: none;
 }
 
+// Remove logo from title slide
+// .reveal .slide-logo > a[href*='title-slide'] {
+//   display: none;
+// }
+
 // Make callout font size standard
 .reveal .slides section .callout {
   font-size: 0.9em!important;
