@@ -101,3 +101,19 @@ $blockMargin: 30px;
   color:#e64626;
   padding: 32px;
 }
+
+// aside footnote setting
+.reveal .slide aside .aside-footnotes {
+  font-size: 1rem;
+}
+.reveal .slide aside, .reveal .slide div.aside {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.7em;
+  color: #6f6f6f;
+}
+
+.reveal .slide sup {
+  font-size: 1rem;
+}
