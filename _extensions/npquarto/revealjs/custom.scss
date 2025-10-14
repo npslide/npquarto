@@ -30,27 +30,35 @@ $body-color: #555555; // body text
 $text-muted: lighten($body-color, 50%);
 $link-color: $pepsired;
 $link-color-hover: lighten($link-color, 10%);
+$selection-bg: $sandstone !default;
+// $selection-color: ;
+
 
 // Presentation settings
 
 $presentation-heading-font:	$font-family-sans-serif;
-// $presentation-font-size-root: 35px;
-// $presentation-font-smaller: 0.7rem;
-// $presentation-h1-font-size:	2.5em;
-// $presentation-h2-font-size:	1.6em;
-// $presentation-h3-font-size:	1.3em;
-// $presentation-h4-font-size:	1em;
-// $presentation-line-height: 1.34;
-$presentation-heading-font-weight:	600;
+$presentation-font-size-root: 35px;
+$presentation-font-smaller: 0.7rem;
+$presentation-h1-font-size:	2.5em;
+$presentation-h2-font-size:	1.3em;
+$presentation-h3-font-size:	1.0em;
+$presentation-h4-font-size:	0.8em;
+$presentation-line-height: 1.34;
+$presentation-heading-font-weight:	600 !default;
 $presentation-heading-color: $pepsiblue; // Headings
 $presentation-heading-line-height:	1.2;
 $presentation-heading-letter-spacing:	normal;
 $presentation-heading-text-transform:	none;
 $presentation-heading-text-shadow:	none;
+// $presentation-heading-text-transform: uppercase !default; // from settings.scss
 $presentation-h1-text-shadow:	none;
 $presentation-block-margin:	12px;
 $presentation-slide-text-align:	left;
-$presentation-title-slide-text-align:	center;
+$presentation-title-slide-text-align:	left!default;
+
+// $border-color:	lighten($body-color, 30%);
+// $border-width:	1px;
+// $border-radius:	3px;
 
 // Code
 // $code-color:	var(–quarto-hl-fu-color);
@@ -146,4 +154,46 @@ $blockMargin: 30px;
 
 .reveal .slide sup {
   font-size: 1rem;
+}
+
+.reveal .contentbox {
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+  background-color: white; 
+  color: black;
+  border-radius: 20px; 
+  text-align: center; 
+  aspect-ratio: 1 / 1;
+  width: 250px; 
+  margin: auto;
+  font-size: 2vw
+}
+
+.reveal .cbgreen {
+  background-color: #99BC85; 
+  color: white; 
+}
+
+.reveal .imgboxt {
+  position: absolute;
+  display: block;
+  top: 150px;
+  right: -150px;
+  width: 100px
+}
+
+.reveal .imgboxm {
+  position: absolute;
+  display: block;
+  top: 300px;
+  right: -150px;
+  width: 100px
+}
+
+.reveal .imgboxb {
+  position: absolute;
+  display: block;
+  top: 450px;
+  right: -150px;
+  width: 100px
 }
