@@ -7,9 +7,9 @@ contributes:
     revealjs:
       slide-number: "c/t"
       theme: [revealjs/custom.scss]
-      title-slide-attributes:
-        data-background-image: "assets/title-bg.png"
-        data-background-size: contain
+      # title-slide-attributes:
+      #   data-background-image: "assets/title-bg.png"
+      #   data-background-size: contain
       html-math-method: katex
       logo: "assets/logo.png"
     beamer:
