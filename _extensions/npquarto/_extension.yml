@@ -7,11 +7,15 @@ contributes:
     revealjs:
       slide-number: "c/t"
       theme: [revealjs/custom.scss]
-      title-slide-attributes:
-        data-background-image: "assets/title-bg.png"
-        data-background-size: contain
+      # title-slide-attributes:
+      #   data-background-image: "assets/title-bg.png"
+      #   data-background-size: contain
       html-math-method: katex
       logo: "assets/logo.png"
+      include-in-header: 
+        text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     beamer:
       include-in-header: 
         - beamer/front-matter.tex
